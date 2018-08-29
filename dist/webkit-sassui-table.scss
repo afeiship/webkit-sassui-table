@@ -1,0 +1,28 @@
+/*webkit-sassui-table Start*/
+$webkit-sassui-table-options:(
+  border-color: #e8e8e8,
+  theader-background-color: #f7f7f7,
+  cell-padding: 5px 10px
+)!default;
+
+.webkit-sassui-table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+
+  $border-color: map-get($map: $webkit-sassui-table-options, $key:border-color );
+  $theader-background-color: map-get($map: $webkit-sassui-table-options, $key:theader-background-color );
+  $cell-padding: map-get($map: $webkit-sassui-table-options, $key:cell-padding );
+  
+
+  th, td {
+    text-align: left;
+    border: 1px solid $border-color;
+    padding: $cell-padding;
+  }
+
+  th {
+    background: $theader-background-color;
+  }
+}
+/*webkit-sassui-table End*/

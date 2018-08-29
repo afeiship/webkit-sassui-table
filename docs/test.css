@@ -1,0 +1,21 @@
+/*webkit-sassui-table Start*/
+.webkit-sassui-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+
+.webkit-sassui-table th, .webkit-sassui-table td {
+  text-align: left;
+  border: 1px solid #e8e8e8;
+  padding: 5px 10px;
+}
+
+.webkit-sassui-table th {
+  background: #f7f7f7;
+}
+
+/*webkit-sassui-table End*/
+.test-webkit-sassui-table {
+  border: 1px solid red;
+}
