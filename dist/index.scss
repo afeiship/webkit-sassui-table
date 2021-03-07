@@ -3,16 +3,35 @@
  * description: Webkit sass table.
  * homepage: https://github.com/afeiship/wsui-table
  * version: 1.0.0
- * date: 2020-12-23 15:01:37
+ * date: 2021-03-07 19:26:31
  * license: MIT
  */
 
 /*wsui-table Start*/
-$wsui-table-options: (
-  color: #f00
-) !default;
+$wsui-table-options:(
+  border-color: #e8e8e8,
+  theader-background-color: #f7f7f7,
+  cell-padding: 5px 10px
+)!default;
 
-.wsui-table {
-  //Your code goes here.
+.wsui-table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+
+  $border-color: map-get($map: $wsui-table-options, $key:border-color );
+  $theader-background-color: map-get($map: $wsui-table-options, $key:theader-background-color );
+  $cell-padding: map-get($map: $wsui-table-options, $key:cell-padding );
+
+
+  th, td {
+    text-align: left;
+    border: 1px solid $border-color;
+    padding: $cell-padding;
+  }
+
+  th {
+    background: $theader-background-color;
+  }
 }
 /*wsui-table End*/

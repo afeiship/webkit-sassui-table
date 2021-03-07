@@ -3,8 +3,19 @@
  * description: Webkit sass table.
  * homepage: https://github.com/afeiship/wsui-table
  * version: 1.0.0
- * date: 2020-12-23 15:01:37
+ * date: 2021-03-07 19:26:31
  * license: MIT
  */
 /*wsui-table Start*/
+.wsui-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show; }
+  .wsui-table th, .wsui-table td {
+    text-align: left;
+    border: 1px solid #e8e8e8;
+    padding: 5px 10px; }
+  .wsui-table th {
+    background: #f7f7f7; }
+
 /*wsui-table End*/
