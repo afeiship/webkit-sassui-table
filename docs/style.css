@@ -1,21 +1,27 @@
-/*webkit-sassui-table Start*/
-.webkit-sassui-table {
+/*wsui-table Start*/
+.wsui-table {
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
 }
 
-.webkit-sassui-table th, .webkit-sassui-table td {
+.wsui-table th, .wsui-table td {
   text-align: left;
   border: 1px solid #e8e8e8;
   padding: 5px 10px;
 }
 
-.webkit-sassui-table th {
+.wsui-table th {
   background: #f7f7f7;
 }
 
-/*webkit-sassui-table End*/
-.test-webkit-sassui-table {
+/*wsui-table End*/
+.test-wsui-table {
   border: 1px solid red;
+}
+
+.wsui-table {
+  width: 60%;
+  min-width: 320px;
+  margin: 40px auto;
 }
