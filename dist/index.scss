@@ -3,7 +3,7 @@
  * description: Webkit sass table.
  * homepage: https://github.com/afeiship/wsui-table
  * version: 1.0.0
- * date: 2021-03-07 19:26:31
+ * date: 2021-03-28 17:56:31
  * license: MIT
  */
 
@@ -11,7 +11,7 @@
 $wsui-table-options:(
   border-color: #e8e8e8,
   theader-background-color: #f7f7f7,
-  cell-padding: 5px 10px
+  cell-padding: 4px 10px
 )!default;
 
 .wsui-table{
@@ -32,6 +32,17 @@ $wsui-table-options:(
 
   th {
     background: $theader-background-color;
+  }
+
+  tr{
+    transition: background 0.3s;
+    cursor: default;
+  }
+
+  &.is-hoverable{
+    tr:hover{
+      background: darken($theader-background-color, 5%);
+    }
   }
 }
 /*wsui-table End*/
